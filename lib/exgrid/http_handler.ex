@@ -30,7 +30,10 @@ defmodule ExGrid.HTTPHandler do
   """
   def post(_, url, payload), do: post(url, payload)
   def post(url, payload) do
-    response = HTTPotion.post(url, payload, set_headers, [])
+
+    response = HTTPotion.post url, [body: payload, headers: set_headers]
+
+
     {_, body} =  parse_body(response.body)
     {response.status_code, body}
   end
@@ -39,8 +42,7 @@ defmodule ExGrid.HTTPHandler do
   Build headers
   """
   def set_headers do
-    HashDict.new
-    |> HashDict.put(:"content-type", "application/x-www-form-urlencoded")
+    ["content-type": "application/x-www-form-urlencoded"]
   end
 
   @doc """

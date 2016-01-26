@@ -1,7 +1,7 @@
 %{"certifi": {:hex, :certifi, "0.3.0"},
   "combine": {:hex, :combine, "0.7.0"},
   "hackney": {:hex, :hackney, "1.4.8"},
-  "httpotion": {:hex, :httpotion, "1.0.0"},
+  "httpotion": {:hex, :httpotion, "2.1.0"},
   "ibrowse": {:hex, :ibrowse, "4.2.2"},
   "idna": {:hex, :idna, "1.0.3"},
   "json": {:hex, :json, "0.3.2"},
