@@ -3,8 +3,8 @@ defmodule ExGrid.Mixfile do
 
   def project do
     [app: :exgrid,
-      version: "0.2.3",
-      elixir: "~> 1.0.2",
+      version: "0.2.4",
+      elixir: "~> 1.2.0",
       description: description,
       package: package,
       deps: deps]
@@ -18,10 +18,10 @@ defmodule ExGrid.Mixfile do
   end
 
   defp deps do
-    [ {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
+    [ {:ibrowse, "~> 4.2.0"},
       {:httpotion, "~> 1.0.0"},
       {:json, "~> 0.3.2"},
-      {:timex, "~> 0.13.2"}
+      {:timex, "~> 1.0.0"}
     ]
   end
 
