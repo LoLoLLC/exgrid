@@ -19,7 +19,7 @@ defmodule ExGrid.Mixfile do
 
   defp deps do
     [ {:ibrowse, "~> 4.2.0"},
-      {:httpotion, "~> 2.1.0"},
+      {:httpotion, "~> 2.1 or ~> 3.0"},
       {:json, "~> 0.3.2"}
     ]
   end
